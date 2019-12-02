@@ -1,0 +1,101 @@
+.hidden {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    height: 600px;
+    width: 100%;
+    background-color: grey;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quizintro {
+    background-color: white;
+    width: 90%;
+    height: 500px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.quizintro p {
+    padding-bottom: 60px;
+}
+
+.questions {
+    background-color: white;
+    width: 90%;
+    height: 500px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.questions h2 {
+    padding-bottom: 20px;
+}
+
+.answers {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.endquiz {
+    background-color: white;
+    width: 90%;
+    height: 500px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.endquiz h1{
+    padding: 20px;
+}
+
+.endquiz h3{
+    padding: 20px;
+}
+
+.endquiz p {
+    padding: 20px;
+}
+
+footer {
+    height: 200px;
+    width: 100%;
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
