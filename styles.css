@@ -1,101 +1,47 @@
-.hidden {
-    display: none;
+.quiz,
+.summary {
+  display: none;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
+.quiz ul {
+  list-style: none;
+  padding: 0;
 }
 
-header {
-    height: 100px;
-    width: 100%;
-    background-color: darkgrey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.quiz li {
+  cursor: pointer;
 }
 
-main {
-    height: 600px;
-    width: 100%;
-    background-color: grey;
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.selected {
+  background-color: yellow;
 }
 
-.quizintro {
-    background-color: white;
-    width: 90%;
-    height: 500px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.quizintro p {
-    padding-bottom: 60px;
+/* .introduction {
+  background-color: white;
+  padding-top: 0;
+  margin: 0;
 }
 
 .questions {
-    background-color: white;
-    width: 90%;
-    height: 500px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
+  background-color: white;
+  padding-top: 0;
+  margin: 0;
 }
 
-.questions h2 {
-    padding-bottom: 20px;
+.rightAnswer {
+  background-color: white;
+  padding-top: 0;
+  margin: 0;
 }
 
-.answers {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
+.wrongAnswer {
+  background-color: white;
+  padding-top: 0;
+  margin: 0;
 }
 
-.endquiz {
-    background-color: white;
-    width: 90%;
-    height: 500px;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.endquiz h1{
-    padding: 20px;
-}
-
-.endquiz h3{
-    padding: 20px;
-}
-
-.endquiz p {
-    padding: 20px;
-}
-
-footer {
-    height: 200px;
-    width: 100%;
-    background-color: darkgrey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
+.results {
+  background-color: white;
+  padding-top: 0;
+  margin: 0;
+} */

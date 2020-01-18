@@ -5,79 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Quiz App</title>
+    <title>My Crazy Quiz App</title>
   </head>
   <body>
-    <header>
-      <div class="welcome">
-        LOGO HERE
-      </div>
-    </header>
+    <div class="start">
+      <h1>My Crazy Quiz</h1>
+      <h2>Welcome to My Crazy Quiz</h2>
+      <a href="#">Start Quiz!</a>
+    </div>
 
-    <main>
-      <!-- This is the first page -->
+    <div class="quiz">
+      <h2>Question Title</h2>
+      <ul>
+        <li>Choice</li>
+        <li>Choice</li>
+        <li>Choice</li>
+        <li>Choice</li>
+      </ul>
+      <a href="#">Submit Answer</a>
+    </div>
 
-      <div class="quizintro, hidden">
-        <p>
-          Learn fun facts about all things random while you take this quiz.
-          Beware as this is not for the faintest of heart ...
-        </p>
-        <button>Start Quiz!</button>
-      </div>
-
-      <!-- This is the second page -->
-
-      <div class="questions, hidden">
-        <h2>Question 1/10</h2>
-        <p>What is the capital of Thailand?</p>
-        <div class="answers">
-          <div>
-            <input type="radio" name="answer1" value="Toronto" /> Toronto
-          </div>
-          <div>
-            <input type="radio" name="answer2" value="Bangkok" /> Bangkok
-          </div>
-          <div>
-            <input type="radio" name="answer3" value="Melbourne" /> Melbourne
-          </div>
-          <div>
-            <input type="radio" name="answer4" value="New York" /> New York
-          </div>
-        </div>
-        <button>Submit Answer</button>
-      </div>
-
-      <!-- This is for wrong answers template -->
-
-      <div class="quizintro">
-        <h1>Oh! That's too bad</h1>
-        <h3>You got the wrong answer! Maybe next time!</h3>
-        <br /><button>Next Question</button>
-      </div>
-
-      <!-- This is for right answers template -->
-
-      <div class="quizintro, hidden">
-        <h1>Congratulations!</h1>
-        <h3>You got the right answer! Keep up the good work!</h3>
-        <br /><button>Next Question</button>
-      </div>
-
-      <!-- This is the third page -->
-
-      <div class="endquiz, hidden">
-        <h1>Wonderful! You passed...</h1>
-        <h3>Your Score: 9/10</h3>
-        <p>
-          Some people make it this far but don't pass. Either way it is a great
-          learning experience for everyone.
-        </p>
-        <button>Retake Quiz</button>
-      </div>
-    </main>
-
-    <footer>
-      <p>Created by Vik Birdi</p>
-    </footer>
+    <div class="summary">
+      <h2>Summary Screen</h2>
+      <p>Congrats you scored x</p>
+      <a href="#">Restart Quiz</a>
+    </div>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
