@@ -2,24 +2,36 @@ let score = 0;
 let currentQuestion = 0;
 let questions = [
   {
-    title: "Question 1 goes here?",
-    answers: ["answer1", "answer2", "answer3", "answer4"],
-    correct: 2
-  },
-  {
-    title: "Question 2 goes here?",
-    answers: ["answer1", "answer2", "answer3", "answer4"],
+    title: "What restaurant franchise advises you to 'Eat Fresh'?",
+    answers: ["McDonalds", "KFC", "Taco Bell", "Subway"],
     correct: 3
   },
   {
-    title: "Question 3 goes here?",
-    answers: ["answer1", "answer2", "answer3", "answer4"],
+    title:
+      "How many blue stripes does the United States of America national flag have?",
+    answers: ["0", "7", "13", "12"],
+    correct: 2
+  },
+  {
+    title:
+      "Which of these antagonist characters was created by novelist J.K. Rowling?",
+    answers: [
+      "Lord Voldemort",
+      "Professor Moriarty",
+      "Darth Vader",
+      "Lord Farqaad"
+    ],
     correct: 0
   },
   {
-    title: "Question 4 goes here?",
-    answers: ["answer1", "answer2", "answer3", "answer4"],
+    title: "How many spaces are on a standard Monopoly board?",
+    answers: ["20", "40", "60", "80"],
     correct: 1
+  },
+  {
+    title: "What is the color of Donald Duck's bowtie?",
+    answers: ["Blue", "Green", "Red", "Orange"],
+    correct: 2
   }
 ];
 
@@ -56,10 +68,13 @@ function showQuestion() {
   let question = questions[currentQuestion];
   $(".quiz h2").text(question.title);
   $(".quiz ul").html("");
+  $(".quiz h6").text(" Question: " + [currentQuestion + 1]);
+  $(".quiz h5").text("Score " + score + " / " + questions.length);
   for (var i = 0; i < question.answers.length; i++) {
     $(".quiz ul").append("<li id='" + i + "'>" + question.answers[i] + "</li>");
   }
 }
+
 function checkAnswer(guess) {
   let question = questions[currentQuestion];
   if (question.correct === guess) {
@@ -72,6 +87,7 @@ function checkAnswer(guess) {
     showQuestion();
   }
 }
+
 function showSummary() {
   $(".quiz").hide();
   $(".summary").show();

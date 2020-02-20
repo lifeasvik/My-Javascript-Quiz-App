@@ -1,11 +1,118 @@
+* {
+  font-family: "Anton", sans-serif;
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 22px;
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+main {
+  height: 750px;
+}
+
+.babypics {
+  padding: 30px;
+}
+.summary h2 {
+  padding: 55px;
+}
+
+.quiz,
+.start,
+.summary {
+  width: 500px;
+  height: 90%;
+  border: solid 1px black;
+  background-color: #89cff0;
+}
+
+body {
+  background-image: url("http://clipart-library.com/images/8TE6k7yjc.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  font-style: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  padding: 10px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+a {
+  border: 1px solid #384252;
+  padding: 10px 15px;
+  color: #384252;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: #384252;
+  color: white;
+}
+
 .quiz,
 .summary {
   display: none;
+  padding: 10px;
 }
 
 .quiz ul {
   list-style: none;
-  padding: 0;
+  padding: 5px;
+}
+
+.scoremeter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quiz h6 {
+  padding-top: 2px;
+  font-size: 18px;
+  color: #89cff0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.quiz h5 {
+  padding-top: 2px;
+  font-size: 18px;
+  color: #89cff0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .quiz li {
@@ -13,5 +120,9 @@
 }
 
 .selected {
-  background-color: yellow;
+  background-color: none;
+  border: dashed 3px black;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
