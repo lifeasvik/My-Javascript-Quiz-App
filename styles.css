@@ -1,11 +1,10 @@
 * {
   font-family: "Anton", sans-serif;
-  padding: 10px;
+  padding-top: 5px;
   margin: 0;
   box-sizing: border-box;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: normal;
-  color: black;
   text-decoration: none;
   text-align: center;
 }
@@ -14,8 +13,12 @@ main {
   height: 750px;
 }
 
+button {
+  padding-top: 10px;
+}
+
 .babypics {
-  padding: 30px;
+  padding: 5px;
 }
 .summary h2 {
   padding: 55px;
@@ -23,11 +26,19 @@ main {
 
 .quiz,
 .start,
-.summary {
-  width: 500px;
+.summary,
+.feedback {
+  width: 350px;
   height: 90%;
   border: solid 1px black;
   background-color: #89cff0;
+}
+
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 body {

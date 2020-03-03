@@ -34,68 +34,76 @@ let questions = [
     correct: 2
   }
 ];
-
 $(document).ready(function() {
+  $(".feedback").hide();
   $(".start a").click(function(e) {
     e.preventDefault();
     $(".start").hide();
     $(".quiz").show();
     showQuestion();
   });
-
-  $(".quiz ul").on("click", "li", function() {
-    $(".selected").removeClass("selected");
-    $(this).addClass("selected");
+  $("#nextquestion").click(e => {
+    $(".feedback").hide();
+    $(".quiz").show();
+    showQuestion();
   });
-
-  $(".quiz a").click(function(e) {
+  $("#questionform").submit(function(e) {
     e.preventDefault();
-    if ($("li.selected").length) {
-      let guess = parseInt($("li.selected").attr("id"));
+    let guess = e.target.answers.value;
+    if (guess) {
       checkAnswer(guess);
     } else {
       alert("Please Select An Answer");
     }
+    e.target.reset();
   });
-
   $(".summary a").click(function(e) {
     e.preventDefault();
     restartQuiz();
   });
 });
-
 function showQuestion() {
   let question = questions[currentQuestion];
-  $(".quiz h2").text(question.title);
-  $(".quiz ul").html("");
-  $(".quiz h6").text(" Question: " + [currentQuestion + 1]);
-  $(".quiz h5").text("Score " + score + " / " + questions.length);
+  $("form legend").text(question.title);
+  $(".quiz h6").text(
+    " Question: " + [currentQuestion + 1] + " / " + questions.length
+  );
+  $(".quiz h5").text("Score: " + score + " / " + questions.length);
   for (var i = 0; i < question.answers.length; i++) {
-    $(".quiz ul").append("<li id='" + i + "'>" + question.answers[i] + "</li>");
+    $("#label" + i).text(question.answers[i]);
   }
 }
-
 function checkAnswer(guess) {
   let question = questions[currentQuestion];
-  if (question.correct === guess) {
+  let feedback = false;
+  if (question.correct === parseInt(guess)) {
     score++;
+    feedback = true;
   }
   currentQuestion++;
   if (currentQuestion >= questions.length) {
     showSummary();
   } else {
-    showQuestion();
+    showFeedback(feedback);
   }
 }
-
+function showFeedback(feedback) {
+  $(".quiz").hide();
+  $(".feedback").show();
+  if (feedback) {
+    $("#feedbacktext").text("You answered correctly!");
+  } else {
+    $("#feedbacktext").text("You answered incorrectly!");
+  }
+}
 function showSummary() {
   $(".quiz").hide();
+  $(".feedback").hide();
   $(".summary").show();
   $(".summary p").text(
-    "Congrats you scored " + score + " out of " + questions.length + " !"
+    "Congrats, you scored " + score + " out of " + questions.length + " !"
   );
 }
-
 function restartQuiz() {
   $(".summary").hide();
   $(".quiz").show();
