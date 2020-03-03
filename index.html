@@ -5,64 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
     <title>My Crazy Quiz App</title>
   </head>
   <body>
-  <main aria-live="polite">
-    <div class="start">
-      <div class="babypics"><img src="http://clipart-library.com/img1/963295.png" width="150px" height="150px"></img></div>
-      <div class="mainheader"><h1>Are You Smarter Than A Baby?</h1></div>
-      <h2>This baby got 5/5 on this random question quiz. Let's see how you do!</h2>
-      <a href="#">Start Quiz!</a>
-    </div>
-    <div class="quiz">
-      <div class="scoremeter">
-        <h5>questions</h5>
-        <h5>score</h5>
+    <main aria-live="polite">
+      <div class="start">
+        <div class="babypics">
+          <img
+            src="http://clipart-library.com/img1/963295.png"
+            width="150"
+            height="150"
+            alt="Baby Picture"
+          />
+        </div>
+        <div class="mainheader"><h1>Are You Smarter Than A Baby?</h1></div>
+        <h2>
+          This baby got 5/5 on this random question quiz. Let's see how you do!
+        </h2>
+        <a href="#">Start Quiz!</a>
       </div>
-      <div class="babypics"><img src="http://clipart-library.com/img1/963208.png" width="120px" height="130px"></img></div>
-      
-      <form id="questionform">
-        <fieldset>
-          <legend>Question Title</legend>
-           <ul>
-        <li>
-          <input type="radio" value="0" name="answers" id="answer0" />
-          <label for="answer0" id="label0">Choice 1</label>
-        </li>
-        <li>
-          <input type="radio" value="1" name="answers" id="answer1" />
-          <label for="answer1" id="label1">Choice 2 </label>
-        </li>
-        <li>
-          <input type="radio" value="2" name="answers" id="answer2" />
-          <label for="answer2" id="label2">Choice 3 </label>
-        </li>
-        <li>
-          <input type="radio" value="3" name="answers" id="answer3" />
-          <label for="answer3" id="label3">Choice 4 </label>
-        </li>
-      </ul>
-    </fieldset>
-    <div>
-      <button>Submit Answer</button>
-    </div>
-    </form>
-    </div>
-    <div class="feedback">
-      <img src="http://clipart-library.com/images_k/transparent-baby/transparent-baby-5.png" width="150px" height="130px">
-      <h2 id="feedbacktext">You guessed correctly!</h2>
-      <button id="nextquestion">Next Question</button>
-    </div>
-    <div class="summary">
-      <div class="babypics"><img src="http://clipart-library.com/img1/963199.png" width="150px" height="130px"></img></div>
-      <h2>So do you still think you are smarter than a baby?</h2>
-      <p>Congrats you scored x</p>
-      <a href="#">Restart Quiz</a>
-    </div>
-</main>
+      <div class="quiz">
+        <div class="scoremeter">
+          <h6>questions</h6>
+          <h5>score</h5>
+        </div>
+        <div class="babypics">
+          <img
+            src="http://clipart-library.com/img1/963208.png"
+            width="120"
+            height="13"
+            alt="Baby Picture"
+          />
+        </div>
+
+        <form id="questionform">
+          <fieldset>
+            <legend>Question Title</legend>
+            <ul>
+              <li>
+                <input type="radio" value="0" name="answers" id="answer0" />
+                <label for="answer0" id="label0">Choice 1</label>
+              </li>
+              <li>
+                <input type="radio" value="1" name="answers" id="answer1" />
+                <label for="answer1" id="label1">Choice 2 </label>
+              </li>
+              <li>
+                <input type="radio" value="2" name="answers" id="answer2" />
+                <label for="answer2" id="label2">Choice 3 </label>
+              </li>
+              <li>
+                <input type="radio" value="3" name="answers" id="answer3" />
+                <label for="answer3" id="label3">Choice 4 </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div>
+            <button>Submit Answer</button>
+          </div>
+        </form>
+      </div>
+      <div class="feedback">
+        <img
+          src="http://clipart-library.com/images_k/transparent-baby/transparent-baby-5.png"
+          width="150"
+          height="130"
+          alt="Baby Picture"
+        />
+        <h2 id="feedbacktext">You guessed correctly!</h2>
+        <button id="nextquestion">Next Question</button>
+      </div>
+      <div class="summary">
+        <div class="babypics">
+          <img
+            src="http://clipart-library.com/img1/963199.png"
+            width="150"
+            height="130"
+            alt="Baby Picture"
+          />
+        </div>
+        <h2>So do you still think you are smarter than a baby?</h2>
+        <p>Congrats you scored x</p>
+        <a href="#">Restart Quiz</a>
+      </div>
+    </main>
     <script src="//code.jquery.com/jquery.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

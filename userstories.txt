@@ -1,0 +1,12 @@
+1) As a new user, I want to input my airport I leave from | HIGH
+2) As a new user, I want to see the a landing page that asks me for destination airport, flight dates and city I am going to | HIGH
+3) As a new user, I want to enter this information and be sent to a results page | HIGH
+4) As a new user, I want to see flights and prices to my destination city | HIGH
+5) As a new user, I want to see nearby restaurants in the destination city | MEDIUM
+6) As a new user, I want to to see the weather in the destination city | MEDIUM
+7) As a disabled user (blind), I want to be able to audibly hear where the search bar is on the main page  | HIGH
+8) As a disabled user, I want to see the results page populate clearly, easy to read and audbile tags for browsers catering to blind users. | HIGH
+9) As a new user, I want to see a picture of an island in the background to set the mood for vacation | LOW
+10) As a new user, I want to see a link on the results page that will help me find my airport | LOW
+@lifeasvik
+ 
