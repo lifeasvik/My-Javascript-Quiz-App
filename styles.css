@@ -28,7 +28,7 @@ button {
 .start,
 .summary,
 .feedback {
-  width: 350px;
+  width: 315px;
   height: 90%;
   border: solid 1px black;
   background-color: #89cff0;
@@ -136,4 +136,22 @@ a:hover {
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+}
+
+@media screen and (min-width: 480px) {
+  .quiz,
+  .start,
+  .summary,
+  .feedback {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .quiz,
+  .start,
+  .summary,
+  .feedback {
+    width: 500px;
+  }
 }

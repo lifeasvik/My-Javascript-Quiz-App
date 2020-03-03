@@ -1,5 +1,6 @@
 let score = 0;
 let currentQuestion = 0;
+let answer = 0;
 let questions = [
   {
     title: "What restaurant franchise advises you to 'Eat Fresh'?",
@@ -84,18 +85,27 @@ function checkAnswer(guess) {
   if (currentQuestion >= questions.length) {
     showSummary();
   } else {
-    showFeedback(feedback);
+    showFeedback(feedback, question);
   }
 }
-function showFeedback(feedback) {
+
+// Testing this part of the code
+
+function showFeedback(feedback, question) {
   $(".quiz").hide();
   $(".feedback").show();
   if (feedback) {
     $("#feedbacktext").text("You answered correctly!");
   } else {
-    $("#feedbacktext").text("You answered incorrectly!");
+    $("#feedbacktext").text(
+      "You answered incorrectly! The correct answer is: " +
+        question.answers[question.correct]
+    );
   }
 }
+
+// Testing this part of the code
+
 function showSummary() {
   $(".quiz").hide();
   $(".feedback").hide();
